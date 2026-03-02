@@ -10,8 +10,11 @@ A Flappy Bird AI agent based on the Q-Learning algorithm.
 - `flappy_q/env.py`: Game environment (physics engine and collision detection).
 - `flappy_q/ui_pygame.py`: Game UI (Pygame rendering and text display).
 - `flappy_q/io_paths.py`: File path management (loading models, images, and audio assets).
+- `data/qvalues.json`: Saved Q-table containing the AI's learned knowledge.
+- `data/hitmasks_data.pkl`: Pre-calculated pixel-perfect collision masks to speed up training.
 
 ## How to Run
+Open your terminal (or command prompt) and run the following commands:
 
 1. Install the required library:
 pip install pygame
