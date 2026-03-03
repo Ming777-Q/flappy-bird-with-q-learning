@@ -68,7 +68,7 @@ def main() -> None:
                 score = info.get("score", 0)
 
                 # Early stopping mechanism if the agent performs extremely well
-                if score > 1000:
+                if score > 999:
                     done = True
 
             # 7. Offline Q-value Update
