@@ -17,11 +17,14 @@ A Flappy Bird AI agent based on the Q-Learning algorithm.
 Open your terminal (or command prompt) and run the following commands:
 
 1. Install the required library:
-pip install pygame
+`pip install pygame`
 2. Initialize game data (generate collision masks, run only once):
-python play.py --dump_hitmasks
+`python play.py --dump_hitmasks`
 3. Train the AI agent:
-python train.py --iter 10000 (Add --verbose to print training logs)
-(You can change 10000 to any desired number of episodes. Can be safely interrupted and saved at any time with Ctrl+C)
+`python train.py --iter 10000` (Add `--verbose` to print training logs)
+- You can change 10000 to any desired number of episodes.
+- Can be safely interrupted and saved at any time with `Ctrl+C`
+- Train from scratch: Delete the `data/qvalues.json` file before running the training script.
+- Change score limit: Open train.py and modify the line `if score > 999:` to your desired maximum score.
 4. Watch the AI agent play the game:
-python play.py
+`python play.py`
